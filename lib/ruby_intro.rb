@@ -14,8 +14,9 @@ def max_2_sum(array)
   array.sort{ |a, b| b <=> a }.take(2).reduce(:+)
 end
 
-def sum_to_n? arr, n
-  # YOUR CODE HERE
+def sum_to_n?(array=0,n)
+   return false if array.empty?
+   array.combination(2).any?{|a,b| a+b==n}
 end
 
 # Part 2
