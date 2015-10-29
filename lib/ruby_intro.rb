@@ -8,8 +8,10 @@ def sum(array)
   return sum
 end
 
-def max_2_sum arr
-  # YOUR CODE HERE
+def max_2_sum(array)
+  return 0 if array.length == 0
+  return array.first if array.length == 1
+  array.sort{ |a, b| b <=> a }.take(2).reduce(:+)
 end
 
 def sum_to_n? arr, n
