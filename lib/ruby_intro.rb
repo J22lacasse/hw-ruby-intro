@@ -2,8 +2,10 @@
 
 # Part 1
 
-def sum arr
-  # YOUR CODE HERE
+def sum(array)
+  sum = 0
+  array.each { |a| sum+=a }
+  return sum
 end
 
 def max_2_sum arr
